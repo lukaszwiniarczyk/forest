@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Forest - Kontakt</title>
+		<link rel="icon" type="image/x-icon" href="dist/img/tree-solid.svg">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/92ec758eef.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="dist/css/hamburger.min.css" />
+		<link rel="stylesheet" href="dist/css/main.min.css" />
+	</head>
+	<body>
+		<!-- @include 'nav.kit'  -->
+		<main class="main wrapper">
+			<h2 class="title">kontakt</h2>
+			<section class="contact">
+			<div class="contact__form-box">
+				
+				<form action="">
+					<div class="contact__box">
+						<label for="name"></label>
+						<input type="text" id="name" placeholder="Imię"/>
+						<p class="contact__error contact__error--name">Imię musi się składać z min. 3 znaków.</p>
+					</div>
+					<div class="contact__box">
+						<label for="email"></label>
+						<input type="email" id="email" placeholder="E-mail"/>
+						<p class="contact__error contact__error--email">Wpisz poprawnie maila.</p>
+					</div>
+					
+				
+					<div class="contact__box">
+						<label for="msg"></label>
+					<textarea id="msg" placeholder="Wiadomość"></textarea>
+					<p class="contact__error contact__error--msg">Napisz jakąś wiadomość.</p>
+					</div>
+					<div class="contact__checkbox-box">
+						<input class="checkbox"type="checkbox" id="checkbox"                                  >
+						<label class="contact__checkbox-box__text" for="checkbox" >
+						Wyrażam zgodę na przetwarzanie moich danych osobowych.</label>
+						
+					</div>
+					<p class="contact__error contact__error--checkbox">Zaznacz powyższe pole, żeby kontynować.</p>
+					<div class="contact__box--button  ">
+						<input class="contact__button" type="button" value="Wyślij" />
+					</div>
+					
+				</form>
+				
+				
+			</div>
+			
+			<div class="contact__info">
+				<p class="contact__title">Napisz do nas</p>
+				<div class="contact__box-info">
+					<p><i class="fa-solid fa-location-dot"></i> <span>Adres: </span> McDonald's na ul. Jasnogórskiej 2, Kraków</p>
+				
+				
+					<p><i class="fa-solid fa-phone"></i> <span>Telefon:</span> +48 000 000 000</p>
+				
+				
+					<p><i class="fa-solid fa-envelope"></i> <span>E-mail:</span> kontakt@forest.pl</p>
+				</div>
+			</div>
+			
+		</section>
+		<section class="map">
+			<iframe class = "map__google-maps"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.8702905073446!2d19.890730616263827!3d50.08871533016506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1690108337159!5m2!1spl!2spl"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</section>
+		<div class="msg">
+			<p>Wiadomość wysłana!</p>
+			<button class="msg__btn">Zamknij</button>
+		</div>
+		</main>
+		<!--@include 'footer.kit'-->
+		<script src="dist/js/main.min.js"></script>
+	</body>
+</html>
