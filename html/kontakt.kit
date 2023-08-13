@@ -28,7 +28,7 @@
 				<form action="">
 					<div class="contact__box">
 						<label for="name"></label>
-						<input type="text" id="name" placeholder="Imię"/>
+						<input type="text" id="name" placeholder="Imię" onkeypress="return preventDot(event)"/>
 						<p class="contact__error contact__error--name">Imię musi się składać z min. 3 znaków.</p>
 					</div>
 					<div class="contact__box">

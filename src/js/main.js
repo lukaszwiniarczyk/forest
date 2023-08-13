@@ -164,3 +164,15 @@ const closeMsg = () => {
 	msg.style.display = 'none';
 };
 msgBtn.addEventListener('click', closeMsg);
+
+
+
+
+//Prevent dot
+const preventDot = (el) => {
+	const key = el.charCode ? el.charCode : el.keyCode;
+
+	if(key === 46){
+		return false
+	}
+}
